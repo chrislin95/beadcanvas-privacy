@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - BeadCanvas</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --accent: #1d1d1f;
+            --text: #1d1d1f;
+            --secondary: #6e6e73;
+            --background: #ffffff;
+            --divider: #e5e5ea;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --accent: #f5f5f7;
+                --text: #f5f5f7;
+                --secondary: #a1a1a6;
+                --background: #111111;
+                --divider: #2c2c2e;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            color: var(--text);
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 44px 22px 56px;
+            background: var(--background);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 34px;
+            line-height: 1.18;
+            margin: 0 0 12px;
+            letter-spacing: 0;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: var(--secondary);
+            margin-bottom: 42px;
+        }
+
+        h2 {
+            color: var(--accent);
+            font-size: 21px;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p, ul {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        .language-divider {
+            margin: 64px 0 26px;
+            padding-top: 28px;
+            border-top: 1px solid var(--divider);
+        }
+
+        .footer {
+            margin-top: 52px;
+            padding-top: 22px;
+            border-top: 1px solid var(--divider);
+            text-align: center;
+            color: var(--secondary);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last Updated: September 25, 2026</p>
+
+    <h2>1. Introduction</h2>
+    <p>BeadCanvas is an iOS app that turns photos into fuse-bead patterns. Classic conversion, editing, and pattern files stay on your device. Cloud features are limited to an anonymous credit account, optional usage statistics, catalog downloads, and the images you choose to send for AI style generation.</p>
+    <p>Your use of BeadCanvas is also covered by Apple’s <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Licensed Application End User License Agreement</a>. We do not publish a separate terms of use.</p>
+
+    <h2>2. Information You Provide</h2>
+    <p>You may choose a photo with the system photo picker, edit it, and save a pattern or image back to Photos. Those files stay on your device unless you start AI style generation or share them yourself.</p>
+    <p>BeadCanvas does not ask you to create an email or password login. The first time the app needs credits or generation, it registers an anonymous account with a random device identifier stored only in the app sandbox, plus the platform and app version. A signing secret is kept on this device. We do not offer a separate cloud account you sign in to.</p>
+    <p>If you write feedback while Anonymous analytics is on, the text (up to 2,000 characters) is sent with that analytics event. If analytics is off, the text stays on the device. Diagnostic logs are sent only when you tap share and pick a destination in the system share sheet. We do not upload them automatically.</p>
+
+    <h2>3. Photos and AI Style Generation</h2>
+    <p>Classic conversion and on-device editing do not upload your photo. When you start an AI style such as chibi, anime, or pixel art, BeadCanvas uploads the image you selected to our server at beadcanvas.splatscene.app. That server forwards it to fal.ai, which runs an image model to produce the styled result. The result is returned to the app and can be saved on your device.</p>
+    <p>We do not store the original photo as a file in our database. We keep a hash of the input, the style, credit cost, task status, and the address of the generated result so the request can finish and credits can be reconciled. The generator processes the image only to create that result.</p>
+
+    <h2>4. Information We Do Not Collect</h2>
+    <p>BeadCanvas does not sell personal data and does not use advertising or tracking SDKs. We do not collect contacts, precise location, microphone recordings, browsing history, or advertising identifiers.</p>
+    <p>The photo picker does not require ongoing Photos library access. Saving to Photos happens only when you choose to save.</p>
+
+    <h2>5. Network Requests and Third-Party Services</h2>
+    <p>BeadCanvas may contact the following services when a feature needs them:</p>
+    <ul>
+        <li>BeadCanvas API (beadcanvas.splatscene.app), for the anonymous account, credits, catalog, and AI generation</li>
+        <li>BeadCanvas catalog assets (beadcanvas-assets.splatscene.app), to download inspiration patterns</li>
+        <li>fal.ai, only on our server, to generate an AI style from an image you submitted</li>
+        <li>PostHog (us.i.posthog.com), only while Anonymous analytics is on</li>
+        <li>Apple StoreKit, to process credit purchases</li>
+        <li>Apple’s public iTunes lookup, to see whether a newer App Store version exists. This request sends the app’s bundle identifier</li>
+    </ul>
+    <p>We do not share your data with advertising networks. Apple and fal.ai handle the data they receive under their own terms. Connection logs on our servers may include an IP address for security and abuse prevention.</p>
+
+    <h2>6. Anonymous Analytics</h2>
+    <p>Anonymous analytics is on by default. You can turn it off in the Me tab. While it is on, BeadCanvas sends product events such as which catalog category you open, which tool or style you tap, whether a generation succeeded, and how long it took. These events use a random identifier. We do not attach your name, email, or photo. IP collection for this analytics pipeline is disabled, and the app does not record automatic taps or screen paths.</p>
+    <p>Turning analytics off stops new events, including feedback text. It does not delete events already received.</p>
+
+    <h2>7. Data Storage and Security</h2>
+    <ul>
+        <li><strong>On this device:</strong> Patterns, settings, the device identifier, and the account signing secret are stored in the iOS app sandbox.</li>
+        <li><strong>On our servers:</strong> The anonymous account, credit balance and ledger, and generation task records described above. Original photos are not stored as files.</li>
+        <li><strong>System protection:</strong> BeadCanvas relies on the iOS sandbox and system encryption. Purchases are completed by Apple.</li>
+        <li><strong>No sale:</strong> We do not sell, rent, or trade your photos, patterns, or account data.</li>
+    </ul>
+
+    <h2>8. Purchases</h2>
+    <p>Credit purchases use Apple’s StoreKit. Apple processes payment. We receive the signed transaction needed to add credits to the anonymous account on this device and to prevent the same transaction from being granted twice. We do not receive your full payment card number.</p>
+
+    <h2>9. Children’s Privacy</h2>
+    <p>BeadCanvas is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+
+    <h2>10. Data Retention and Deletion</h2>
+    <p>Patterns and settings remain on your device until you delete them or uninstall the app. Uninstalling removes the local account credential. The anonymous server account is tied to the device identifier that was stored only on that install, so a later install does not restore the previous account.</p>
+    <p>Generation records and the credit ledger may remain on our servers after you uninstall. Email us if you want the server-side data associated with your use deleted. We will delete or anonymize what we can match to your request. We may keep transaction records that are required for accounting, fraud prevention, or legal obligations.</p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated date.</p>
+
+    <h2>12. Contact</h2>
+    <p>If you have questions about this Privacy Policy, or you want to request deletion of server-side data, contact us at: <a href="mailto:chris_lin_95@foxmail.com">chris_lin_95@foxmail.com</a></p>
+
+    <div class="language-divider"></div>
+
+    <h1>隐私政策</h1>
+    <p class="last-updated">最后更新日期：2026年9月25日</p>
+
+    <h2>1. 引言</h2>
+    <p>BeadCanvas 是一款把照片转成拼豆图纸的 iOS 应用。经典转换、编辑和图纸文件都留在你的设备上。需要联网的部分只有：匿名积分账号、可选的使用统计、灵感图纸下载，以及你主动发起的 AI 风格生成。</p>
+    <p>使用 BeadCanvas 还适用 Apple 的<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">标准最终用户许可协议</a>。我们不另行编写使用条款。</p>
+
+    <h2>2. 您提供的信息</h2>
+    <p>你可以用系统相册选择照片、进行编辑，并把图纸或图片存回相册。这些文件留在本机，除非你开始 AI 风格生成，或自己选择分享。</p>
+    <p>BeadCanvas 不要求邮箱或密码登录。应用第一次需要积分或生成时，会用保存在本机沙盒里的随机设备标识，连同平台和应用版本，注册一个匿名账号。签名密钥也只保存在这台设备上。这不是一个需要你登录的云端账号。</p>
+    <p>匿名分析开启时，你写下的反馈（最多 2,000 字）会随该统计事件发送。分析关闭时，反馈文字留在本机。诊断日志只有在你点分享、并在系统分享面板里选定对象后才会送出。我们不会自动上传。</p>
+
+    <h2>3. 照片与 AI 风格生成</h2>
+    <p>经典转换和本机编辑不会上传照片。当你开始 Q 版、动漫或像素画等 AI 风格时，BeadCanvas 会把你选中的图片上传到我们的服务器 beadcanvas.splatscene.app。服务器再把它转交给 fal.ai，由图像模型生成风格结果，然后返回应用，你可以保存在本机。</p>
+    <p>我们不会把原图当作文件存在数据库里。我们保存输入图的哈希、风格、积分消耗、任务状态，以及生成结果的地址，用来完成这次请求和对账。生成服务只为制作这个结果处理图片。</p>
+
+    <h2>4. 我们不会收集的信息</h2>
+    <p>BeadCanvas 不出售个人数据，也不使用广告或追踪 SDK。我们不收集通讯录、精确位置、麦克风录音、浏览历史或广告标识符。</p>
+    <p>相册选择器不需要持续访问整个相册。只有在你选择保存时，才会写入相册。</p>
+
+    <h2>5. 网络请求和第三方服务</h2>
+    <p>为完成对应功能，BeadCanvas 可能会连接以下服务：</p>
+    <ul>
+        <li>BeadCanvas API（beadcanvas.splatscene.app），用于匿名账号、积分、灵感目录和 AI 生成</li>
+        <li>BeadCanvas 图纸资源（beadcanvas-assets.splatscene.app），用于下载灵感图纸</li>
+        <li>fal.ai，仅由我们的服务器调用，用来根据你提交的图片生成 AI 风格</li>
+        <li>PostHog（us.i.posthog.com），仅在匿名分析开启时</li>
+        <li>Apple StoreKit，用于处理积分购买</li>
+        <li>Apple 公开的 iTunes 查询，用于检查 App Store 是否有新版本。该请求会发送应用的 bundle identifier</li>
+    </ul>
+    <p>我们不会把你的数据分享给广告网络。Apple 和 fal.ai 按其自身条款处理它们收到的数据。我们的服务器连接日志可能包含 IP 地址，用于安全和防止滥用。</p>
+
+    <h2>6. 匿名分析</h2>
+    <p>匿名分析默认开启，你可以在「我」页关闭。开启时，BeadCanvas 会发送产品事件，例如打开了哪个灵感分类、点了哪个工具或风格、生成是否成功以及耗时。这些事件使用随机标识，不附带姓名、邮箱或照片。这条分析链路不采集 IP，应用也不会自动记录点击或页面路径。</p>
+    <p>关闭分析后，新事件不再发送，其中包括反馈文字。已经收到的事件不会因此删除。</p>
+
+    <h2>7. 数据存储与安全</h2>
+    <ul>
+        <li><strong>本机：</strong>图纸、设置、设备标识和账号签名密钥保存在 iOS 应用沙盒中。</li>
+        <li><strong>我们的服务器：</strong>匿名账号、积分余额和流水，以及上文所述的生成任务记录。原图不会作为文件保存。</li>
+        <li><strong>系统保护：</strong>BeadCanvas 依赖 iOS 沙盒和系统加密。购买由 Apple 完成。</li>
+        <li><strong>不出售：</strong>我们不会出售、出租或交易你的照片、图纸或账号数据。</li>
+    </ul>
+
+    <h2>8. 购买</h2>
+    <p>积分购买使用 Apple 的 StoreKit。付款由 Apple 处理。我们只接收为这台设备上的匿名账号发放积分、并防止同一笔交易重复入账所需的签名交易信息。我们不会收到你的完整支付卡号。</p>
+
+    <h2>9. 儿童隐私</h2>
+    <p>BeadCanvas 并非面向 13 岁以下儿童，我们也不会有意收集儿童的个人信息。</p>
+
+    <h2>10. 数据保留与删除</h2>
+    <p>图纸和设置会留在设备上，直到你删除或卸载应用。卸载会移除本机账号凭证。服务器上的匿名账号绑定的是只保存在那一次安装里的设备标识，之后重新安装不会恢复旧账号。</p>
+    <p>卸载后，生成记录和积分流水仍可能留在我们的服务器上。如果你希望删除与你的使用相关的服务端数据，请发邮件给我们。我们会删除或匿名化能够对应到该请求的数据。为对账、防止欺诈或履行法律义务所必需的交易记录可能会保留。</p>
+
+    <h2>11. 隐私政策更新</h2>
+    <p>我们可能会不时更新本隐私政策。任何变更都会发布在本页面，并更新日期。</p>
+
+    <h2>12. 联系方式</h2>
+    <p>如果对本隐私政策有疑问，或需要删除服务端数据，请联系：<a href="mailto:chris_lin_95@foxmail.com">chris_lin_95@foxmail.com</a></p>
+
+    <div class="footer">BeadCanvas</div>
+</body>
+</html>
